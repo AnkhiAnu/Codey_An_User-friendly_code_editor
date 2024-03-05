@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="loader.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Codey : A simple interactive coding platform</title>
+  </head>
+  <body>
+    <header class="header flex">
+      <a href="#">
+        <img class="logo" src="img/code-slash-outline.svg" alt="codey logo" />
+      </a>
+      <nav class="navigation">
+        <h1 class="heading-primary">
+          Codey : A simple & interactive code editor
+        </h1>
+      </nav>
+      <ul class="modes flex">
+        <li class="item flex">
+          <img src="img/sunny-outline.svg" alt="light mode icon" />
+          <span class="light-mode">Light</span>
+        </li>
+        <li class="item flex">
+          <img src="img/moon-outline.svg" alt="dark mode icon" />
+          <span class="dark-mode">Dark</span>
+        </li>
+      </ul>
+    </header>
+    <section class="main flex">
+      <div class="editor">
+        <div class="html-editor">
+          <label class="heading-secondary flex">
+            <img src="img/logo-html5.svg" alt="html logo" />
+            <span>HTML</span>
+          </label>
+          <textarea
+            class="code"
+            id="html-code"
+            spellcheck="false"
+            onkeyup="run()"
+          ></textarea>
+        </div>
+        <div class="css-editor">
+          <label class="heading-secondary flex">
+            <img src="img/logo-css3.svg" alt="css logo" />
+            <span>CSS</span>
+          </label>
+          <textarea
+            class="code"
+            id="css-code"
+            spellcheck="false"
+            onkeyup="run()"
+          ></textarea>
+        </div>
+        <div class="js-editor">
+          <label class="heading-secondary flex">
+            <img src="img/logo-javascript.svg" alt="javascript logo" />
+            <span>Javascript</span>
+          </label>
+          <textarea
+            class="code"
+            id="js-code"
+            spellcheck="false"
+            onkeyup="run()"
+          ></textarea>
+        </div>
+      </div>
+      <div class="output">
+        <label class="heading-secondary flex">
+          <img src="img/caret-forward-outline.svg" alt="ouput icon" />
+          <span>Output:</span>
+        </label>
+        <iframe class="output-screen" id="output--screen"></iframe>
+      </div>
+    </section>
+    <div class="buttons flex">
+      <button class="clear" id="clear-button">Clear All</button>
+    </div>
+    <footer class="footer">
+      <h2 class="footer-heading">Codey</h2>
+      <p class="description">This is a simple user-friendly code editor created using basic html, css, javascript for observing the outcome of the pieces of code written in basic frontend web technologies.</p>
+      <div class="social-links flex">
+        <a href="https://github.com/AnkhiQueeen">
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+        <a href="https://www.linkedin.com/in/aniket-datta-656831205/">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+        <a href="https://www.youtube.com/channel/UC4wLJFvJTuMLErDY032HJNA">
+          <ion-icon name="logo-youtube"></ion-icon>
+        </a>
+      </div>
+      <p class="copyright">Copyright &copy;2024 Domain. Designed by <span class="creator">Aniket Datta</span> & <span class="creator">Ananya Saha</span>.</p>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="script.js" type="text/javascript"></script>
+  </body>
+</html>
